@@ -20,7 +20,7 @@ function Navbar() {
             <Link className={style.navBtn}>Cart</Link>
           </div>
 
-          <span className={style.logo}>Cndle Light</span>
+          <span className={style.logo}>Candle Light</span>
           
           <div className={style.sign}>
             <button>Singin</button>
