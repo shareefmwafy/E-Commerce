@@ -1,85 +1,97 @@
 /* Categories.css */
 
-.container{
+.container {
    width: 100%;
    /* background-color: rgb(180, 166, 149); */
-   
-   margin:auto;
+
+   margin: auto;
    text-align: center;
    padding: 50px 0;
 }
-.container .cat{
+
+.container .cat {
    width: 100%;
    font-size: 50px;
    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
    letter-spacing: 6px;
 
 }
+
 .swiper {
-  width: 100%;
-  /* height: 400px; Adjust height as needed */
-  margin-bottom: 20px; /* Add margin for spacing */
-  position: relative;
-  max-width: 2000px;
- 
-  /* height: 600px; */
-  
-  
+   width: 100%;
+   /* height: 400px; Adjust height as needed */
+   margin-bottom: 20px;
+   /* Add margin for spacing */
+   position: relative;
+   max-width: 2000px;
+
+   /* height: 600px; */
+
+
 }
 
 .swiper-wrapper {
    padding: 100px 0;
-  
+
    /* height: 100%; */
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
+   display: flex;
+   /* justify-content: center; */
+   align-items: center;
 }
 
 .swiper-slide {
-   
-  flex: 0 0 auto;
-  width: 300px; /* Adjust width as needed */
+
+   flex: 0 0 auto;
+   width: 300px;
+   /* Adjust width as needed */
    /* Ensure slides take up full height */
-  overflow: hidden; /* Hide overflow */
-  border-radius: 10px; /* Add border radius for rounded corners */
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
-  margin-right: 10px; /* Add margin between slides */
-  background-color: #d6d5d5;
+   overflow: hidden;
+   /* Hide overflow */
+   border-radius: 10px;
+   /* Add border radius for rounded corners */
+   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+   /* Add shadow for depth */
+   margin-right: 10px;
+   /* Add margin between slides */
+   background-color: #d6d5d5;
 }
 
 .swiper-slide img {
-  width: 100%;
-  height: 70%; /* Adjust height as needed */
-  object-fit: contain; /* Ensure images cover the entire slide */
-  border-radius: 10px 10px 0 0; /* Round top corners */
+   width: 100%;
+   height: 70%;
+   /* Adjust height as needed */
+   object-fit: contain;
+   /* Ensure images cover the entire slide */
+   border-radius: 10px 10px 0 0;
+   /* Round top corners */
 }
 
 .swiper-slide p {
-  padding: 10px;
-  text-align: center;
-  font-size: 14px;
-  background-color: #f9f9f9; /* Background color for category name */
-  border-top: 1px solid #fdfafa; /* Add border between image and name */
-  border-radius: 0 0 10px 10px; /* Round bottom corners */
+   padding: 10px;
+   text-align: center;
+   font-size: 14px;
+   background-color: #f9f9f9;
+   /* Background color for category name */
+   border-top: 1px solid #fdfafa;
+   /* Add border between image and name */
+   border-radius: 0 0 10px 10px;
+   /* Round bottom corners */
 }
 
 .swiper-pagination {
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  transform: translateX(-50%);
+   position: absolute;
+   bottom: 10px;
+   left: 50%;
+   transform: translateX(-50%);
 }
 
 
 
 .swiper-button-prev {
-  left: 50;
+   left: 50;
 
 }
 
 .swiper-button-next {
-  right: 10px;
+   right: 10px;
 }
-
-

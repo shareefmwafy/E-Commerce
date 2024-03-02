@@ -49,7 +49,7 @@ function Categories() {
           slidesPerView: 3,
           spaceBetween: 20
         },
-        500:{
+        500: {
           slidesPerView: 3,
           spaceBetween: 30
         },
@@ -57,7 +57,7 @@ function Categories() {
           slidesPerView: 5,
           spaceBetween: 20
         },
-        1200:{
+        1200: {
           slidesPerView: 5,
           spaceBetween: 0
         }
@@ -77,25 +77,25 @@ function Categories() {
   console.log()
   return (
     <>
-    <div className="container">
-    <p className='cat'>Categories</p>
-    
-    <div className="swiper">
-     
-        <div className="swiper-wrapper">
-          {categories.map((category) => (
-            <div className="swiper-slide" key={category._id}>
-              <img src={category.image.secure_url} alt={category.name} />
-              <p>{category.name}</p>
-            </div>
-          ))}
-        </div>
-        <div className="swiper-button-prev"></div>
-        <div className="swiper-button-next"></div>
+      <div className="container">
+        <p className='cat'>Categories</p>
 
-      
-    </div>
-    </div>
+        <div className="swiper">
+
+          <div className="swiper-wrapper">
+            {categories.map((category) => (
+              <div className="swiper-slide" key={category._id}>
+                <img src={category.image.secure_url} alt={category.name} />
+                <p>{category.name}</p>
+              </div>
+            ))}
+          </div>
+          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-next"></div>
+
+
+        </div>
+      </div>
     </>
   );
 }

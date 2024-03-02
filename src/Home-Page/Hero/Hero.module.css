@@ -9,9 +9,13 @@
 .container {
     width: 100%;
     background-image: linear-gradient(to bottom, rgb(46, 46, 46), rgb(50, 157, 179) 100%);
-    margin: auto;
+
+    /* margin-top: 50px; */
+    padding: 20PX;
     display: flex;
     justify-content: center;
+    box-shadow: 0px 30px 50px rgba(50, 157, 179, 0.5);
+    /* Add shadow for depth with the specified color */
 
 }
 
