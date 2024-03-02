@@ -1,125 +1,96 @@
+/* Categories.css */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-
-
-.container {
+  }
+  
+  .container {
     width: 100%;
     background-image: linear-gradient(to bottom, rgb(46, 46, 46), rgb(50, 157, 179) 100%);
-
-    /* margin-top: 50px; */
-    padding: 20PX;
+    padding: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
     box-shadow: 0px 30px 50px rgba(50, 157, 179, 0.5);
-    /* Add shadow for depth with the specified color */
-
-}
-
-.row {
-
+    border-radius: 20px; 
+  }
+  
+  .row {
     display: flex;
     gap: 20px;
     justify-content: center;
     margin: 50px 0;
     align-items: center;
-    padding: 0 50px;
-    /* flex-wrap: wrap; */
-
-}
-
-.shop {
-
+    padding: 0 20px;
+  }
+  
+  .shop {
     width: 50%;
-    height: 100%;
-}
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
-.shop img {
+  
+  .shop img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-}
-
-.images {
+    object-fit: cover;
+    border-radius: 20px; 
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3); 
+  }
+  
+  .images {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     gap: 15px;
     height: 100%;
     width: 50%;
-}
 
-
-.images .up {
-    height: 50%;
-    border-radius: 10px;
-    width: 100%;
-}
-
-.images .up img {
+  }
+  
+  .up,
+  .down {
+    border-radius: 20px; 
+    overflow: hidden; 
+  }
+  
+  .up img,
+  .down img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 20px; 
+    
 }
-
-.images .down {
-    height: 50%;
+  
+  .down {
     display: flex;
-    justify-content: space-between;
     gap: 10px;
-}
-
-.down .downLeft {
-    /* background-color: cadetblue; */
+  }
+  
+  .downLeft,
+  .downRight {
     width: 50%;
-    border-radius: 10px;
-
-}
-
-.down .downLeft img {
+  }
+  
+  .downLeft img,
+  .downRight img {
     width: 100%;
     height: 100%;
-    object-fit: contain;
-    border-radius: 10px;
+    object-fit: cover;
+    border-radius: 20px;
 }
-
-.down .downRight {
-    width: 50%;
-    border-radius: 10px;
-}
-
-.down .downRight img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    border-radius: 10px;
-}
-
-
-@media screen and (min-width:1400px) {
+  
+  @media screen and (min-width: 1200px) {
     .row {
-        width: 1400px;
-        /* height: 500px; */
-
+      max-width: 1200px;
     }
-
-}
-
-/* @media screen and (min-width:800px) {
-    .row{
-        width: 1400px;
-        height: 600px;
-
-    }
-    img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
-    }
-} */
+  }
+  
+  

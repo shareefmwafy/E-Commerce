@@ -9,8 +9,12 @@ function Hero() {
 
     <>
       <div className={Style.container}>
+
         <div className={Style.row}>
-          <div className={Style.shop}><img src={image1} alt="" /></div>
+          <div className={Style.shop}>
+            <img src={image1} alt="" />
+            
+            </div>
           <div className={Style.images}>
             <div className={Style.up}><img src={image2} alt="" /></div>
 
