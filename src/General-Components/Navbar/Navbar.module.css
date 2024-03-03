@@ -21,14 +21,7 @@ nav {
     align-items: center;
     justify-content: center;
     overflow: hidden;
-<<<<<<< HEAD
-    margin-bottom: 50px;
-=======
-    z-index: 9;
->>>>>>> 806cabbe4d3b13154a71c2a794da25ac8ad7932e
-
-
-
+    z-index: 10;
 }
 
 .container {
