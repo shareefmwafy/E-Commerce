@@ -7,23 +7,32 @@
   }
   
   .container {
-    width: 100%;
+    width: 90%;
     background-image: linear-gradient(to bottom, rgb(46, 46, 46), rgb(50, 157, 179) 100%);
-    padding: 20px;
+    padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     box-shadow: 0px 30px 50px rgba(50, 157, 179, 0.5);
     border-radius: 20px; 
+
+    margin: auto;
+    /* margin: 0 50px; */
+    overflow: hidden;
+    
   }
   
   .row {
+
     display: flex;
-    gap: 20px;
+    gap: 10px;
     justify-content: center;
-    margin: 50px 0;
+    margin: 20px 0;
     align-items: center;
-    padding: 0 20px;
+    /* padding: 0 10px; */
+    /* background-color: red; */
+    height: 100%;
+    width: 100%;
   }
   
   .shop {

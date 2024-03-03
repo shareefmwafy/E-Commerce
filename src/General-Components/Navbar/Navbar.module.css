@@ -12,7 +12,8 @@
 
 nav {
     width: 100%;
-    position: fixed;
+    position: sticky;
+    top: -1px;
     padding: 10px 0;
     background-color: var(--main-color);
     height: 70px;
@@ -20,13 +21,14 @@ nav {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    margin-bottom: 50px;
 
 
 
 }
 
 .container {
-    width: 85%;
+    width: 90%;
     margin: auto;
     text-align: center;
 
