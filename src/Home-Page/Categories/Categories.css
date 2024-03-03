@@ -95,3 +95,10 @@
 .swiper-button-next {
    right: 10px;
 }
+
+
+@media screen and (max-width:700px) {
+   .swiper-button-prev, .swiper-button-next{
+      visibility: hidden;
+   }
+}

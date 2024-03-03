@@ -90,7 +90,7 @@ function Categories() {
               </div>
             ))}
           </div>
-          <div className="swiper-button-prev"></div>
+          <div className="swiper-button-prev"></div> 
           <div className="swiper-button-next"></div>
 
 
