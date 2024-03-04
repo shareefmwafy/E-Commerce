@@ -65,7 +65,7 @@ function Categories() {
       },
       effect: 'coverflow',
       coverflowEffect: {
-        rotate: 30,
+        rotate: 20,
         slideShadows: true,
       },
     });
@@ -78,10 +78,11 @@ function Categories() {
   return (
     <>
       <div className="container">
-        <p className='cat'>Categories</p>
-
+       
+      <p className='cat'>Categories</p>
         <div className="swiper">
-
+          
+          
           <div className="swiper-wrapper">
             {categories.map((category) => (
               <div className="swiper-slide" key={category._id}>

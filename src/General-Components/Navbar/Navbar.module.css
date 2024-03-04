@@ -74,21 +74,24 @@ button {
 
 
 .logo {
-    color: white;
+    color: var(--btn-color);
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 25px;
 }
 
 .sign {}
 
 .sign button {
-    background-color: var(--btn-color);
+    background-color: var(--main-color);
+    border: 2px solid var(--btn-color);
     border-radius: 10px;
     padding: 10px 20px;
+    transition: all 0.3s;
 }
 
 .sign button:hover {
-    background-color: transparent;
-    border: -1px solid var(--btn-color);
+    background-color: var(--btn-color);
 }
 
 .burgerIcon {
@@ -116,6 +119,9 @@ button {
 
     .burgerIcon {
         display: flex;
+    }
+    .logo{
+        font-size: 20px;
     }
 
 }
