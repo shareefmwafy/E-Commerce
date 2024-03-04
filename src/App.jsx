@@ -6,6 +6,9 @@ import './App.css'
 import NotFound from './General-Components/NotFound/NotFound'
 import Home from './Home-Page/Home/Home.jsx'
 import Root from './Root'
+import SignIn from './General-Components/SignIn/signIn.jsx'
+
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -15,6 +18,10 @@ const router = createBrowserRouter([
       {
         path:'/',
         element:<Home/>,
+      },
+      {
+        path:'/login',
+        element:<SignIn/>
       },
       {
         path:'*',

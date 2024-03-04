@@ -23,8 +23,8 @@ function Navbar() {
           <span className={style.logo}>AL-Sahreef Store</span>
           
           <div className={style.sign}>
-            <button>Singin</button>
-            <button>Signup</button>
+            <Link className={style.loginBtn} to='/login'>Login</Link>
+            <Link className={style.signUpBtn}>SignUp</Link>
           </div>
           <div className={style.burgerIcon}>
             <span></span>

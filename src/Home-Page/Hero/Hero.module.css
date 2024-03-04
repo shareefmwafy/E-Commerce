@@ -8,12 +8,12 @@ Categories.css
   
   .container {
     width: 90%;
-    background-image: linear-gradient(to bottom, rgb(46, 46, 46), rgb(50, 157, 179) 100%);
+    background-image: linear-gradient(to bottom, rgb(46, 46, 46), rgb(50, 179, 162) 100%);
     padding: 0 10px;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0px 30px 50px rgba(50, 157, 179, 0.5);
+    box-shadow: 0px 30px 50px rgb(50, 179, 162);
     border-radius: 20px; 
 
     margin: auto;
