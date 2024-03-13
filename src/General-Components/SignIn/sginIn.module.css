@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+  margin-top: 80px;
 
 }
 
@@ -23,7 +23,7 @@
 
 
 .login{
-  
+  border-radius: 20px;
   width: 1000px;
   height: 600px;
   display: flex;
