@@ -95,7 +95,7 @@
 
 }
 
-button{
+.log{
   width: 50%;
   height: 40px;
   border: none;
@@ -113,7 +113,7 @@ button{
   
 }
 
-button:hover{
+.log:hover{
   background-color: rgb(50, 179, 162);
   color: white;
 }

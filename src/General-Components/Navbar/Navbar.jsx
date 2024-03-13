@@ -7,7 +7,7 @@ function Navbar() {
 
   const handleDropdown = () => {
     setIsDropdown(!isDropdown);
-    console.log(isDropdown);
+    // console.log(isDropdown);
   };
 
   return (
@@ -21,7 +21,7 @@ function Navbar() {
                 <span></span>
                 <span></span>
                 <span></span>
-              </button>
+            </button>
           </div>
         
 

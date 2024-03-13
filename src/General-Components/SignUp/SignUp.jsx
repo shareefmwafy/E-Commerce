@@ -33,7 +33,7 @@ function SingUp() {
                                 <input type="password" id="password" name="password" placeholder="Enter Password" />
                             </div>
                         </div>
-                        <button type="submit">Create Account</button>
+                        <button type="submit" className={Style.create}>Create Account</button>
                     </div>
                 </div>
             </div>

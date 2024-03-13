@@ -29,7 +29,7 @@ function signIn() {
                                 <input type="password" id="password" name="password" placeholder="Enter Password" />
                             </div>
                         </div>
-                        <button type="submit">Login</button>
+                        <button type="submit" className={Style.log}>Login</button>
                     </div>
                 </div>
             </div>
