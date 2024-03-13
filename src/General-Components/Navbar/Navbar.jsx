@@ -1,41 +1,49 @@
-import React from 'react'
-import style from './Navbar.module.css'
-import {Link} from 'react-router-dom'
-
-function dropdownMenu() {
-  
-}
-
+import React, { useState } from 'react';
+import './Navbar.css'; // Import your CSS file
+import { Link } from 'react-router-dom';
 
 function Navbar() {
+  const [isDropdown, setIsDropdown] = useState(false);
+
+  const handleDropdown = () => {
+    setIsDropdown(!isDropdown);
+    console.log(isDropdown);
+  };
+
   return (
+    <nav className={isDropdown ? 'dropdown' : ''}>
+      <div className="containerNav">
+        <div className="rowNav">
 
-    <nav>
-      <div className= {style.container}>
-        <div className={style.row}>
+          <div className='rowOne'>
+            <span className="logo">AL-Sahreef Store</span>
+            <button className="burgerIcon" onClick={handleDropdown}>
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+          </div>
+        
 
-          <div className={style.products}>
-            <Link className={style.navBtn} to='/'>Home</Link>
-            <Link className={style.navBtn}>Products</Link>
-            <Link className={style.navBtn}>Cart</Link>
+          <div className={'products'}>
+            <Link className={`navBtnHome ${isDropdown ? 'dFlexNav' : 'dNoneNav'}`} to='/'>Home</Link>
+            <Link className={`navBtnProducts ${isDropdown ? 'dFlexNav' : 'dNoneNav'}`}>Products</Link>
+            <Link className={`navBtnCart ${isDropdown ? 'dFlexNav' : 'dNoneNav'}`}>Cart</Link>
           </div>
 
-          <span className={style.logo}>AL-Sahreef Store</span>
           
-          <div className={style.sign}>
-            <Link className={style.loginBtn} to='/login'>Login</Link>
-            <Link className={style.signUpBtn}>SignUp</Link>
+          
+          <div className={'sign'}>
+            <Link className={`loginBtn ${isDropdown ? 'dFlexNav' : 'dNoneNav'}`} to='/login'>Login</Link>
+            <Link className={`signUpBtn ${isDropdown ? 'dFlexNav' : 'dNoneNav'}`} to='/signup'>SignUp</Link>
           </div>
-          <div className={style.burgerIcon}>
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+
+          
 
         </div>
       </div>
     </nav>
-  )
+  );
 }
 
-export default Navbar
+export default Navbar;

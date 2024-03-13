@@ -35,15 +35,19 @@
    position: relative;
    
    /* background-color: rgb(152, 152, 152); */
-   background:linear-gradient(to bottom,rgb(46, 46, 46), rgb(232, 69, 69));
+   /* background:linear-gradient(to bottom,rgb(46, 46, 46), rgb(232, 69, 69)); */
    
    border-radius: 20px;
    margin-top: 10px;
    display: flex;
    justify-content: center;
    align-items: center;
+   
    /* max-width: 1400px; */
    /* height: 600px; */
+   /* height: 300px; */
+   /* background-color: rgb(218, 233, 232); */
+
 
 
 }
@@ -56,11 +60,12 @@
    display: flex;
    /* justify-content: center; */
    align-items: center;
+   /* height: 300px; */
 }
 
 .swiper-slide {
    width: 50%;
-   flex: 0 0 auto;
+   /* flex: 0 0 auto; */
    width: 300px;
    /* Adjust width as needed */
    /* Ensure slides take up full height */
@@ -73,6 +78,8 @@
    margin-right: 10px;
    /* Add margin between slides */
    background-color: #d6d5d5;
+   
+
 }
 
 .swiper-slide img {

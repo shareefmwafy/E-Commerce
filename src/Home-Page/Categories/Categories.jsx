@@ -46,28 +46,32 @@ function Categories() {
           spaceBetween: 20
         },
         480: {
-          slidesPerView: 3,
+          slidesPerView: 5,
           spaceBetween: 20
         },
         500: {
-          slidesPerView: 3,
+          slidesPerView: 5,
           spaceBetween: 30
         },
         800: {
-          slidesPerView: 5,
+          slidesPerView: 7,
           spaceBetween: 20
         },
         1200: {
-          slidesPerView: 5,
-          spaceBetween: 0
+          slidesPerView: 9,
+          spaceBetween: 20
+        },
+        1600: {
+          slidesPerView: 9,
+          spaceBetween: 20
         }
 
       },
-      effect: 'coverflow',
-      coverflowEffect: {
-        rotate: 20,
-        slideShadows: true,
-      },
+      // effect: 'coverflow',
+      // coverflowEffect: {
+      //   rotate: 0,
+      //   slideShadows: true,
+      // },
     });
 
     return () => {
@@ -86,8 +90,9 @@ function Categories() {
           <div className="swiper-wrapper">
             {categories.map((category) => (
               <div className="swiper-slide" key={category._id}>
+                {/* <p>{category.name}</p> */}
                 <img src={category.image.secure_url} alt={category.name} />
-                <p>{category.name}</p>
+                
               </div>
             ))}
           </div>
