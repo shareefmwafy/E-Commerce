@@ -1,8 +1,9 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Style from './sginIn.module.css'
 import sginImg from './sign.jpg'
 
 function signIn() {
+    
     return (
         <div className={Style.container}>
             <div className={Style.row}>
@@ -10,7 +11,7 @@ function signIn() {
                     <div className={Style.image}>
                         <img src={sginImg} alt="" />
                     </div>
-                    <div className={Style.dataForm}>
+                    <form  className={Style.dataForm}>
                         <div className={Style.formTitle}>
                             <h2>Welcome to our store</h2>
                             <p>Register Your Account</p>
@@ -30,7 +31,7 @@ function signIn() {
                             </div>
                         </div>
                         <button type="submit" className={Style.log}>Login</button>
-                    </div>
+                    </form>
                 </div>
             </div>
         </div>
