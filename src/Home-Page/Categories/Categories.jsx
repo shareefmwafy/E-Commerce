@@ -4,9 +4,9 @@ import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
 
 async function getCategories() {
-  const response = await fetch(`https://ecommerce-node4.vercel.app/categories/active?page=1&limit=10`);
+  const response = await fetch(`https://dummyjson.com/products`);
   const data = await response.json();
-  return data.categories; // Assuming the API returns an array of category objects
+  return data.products; // Assuming the API returns an array of category objects
 }
 
 function Categories() {
@@ -84,14 +84,13 @@ function Categories() {
       <div className="container">
        
       <p className='cat'>Categories</p>
-        <div className="swiper">
-          
-          
+        <div className="swiper">          
           <div className="swiper-wrapper">
             {categories.map((category) => (
-              <div className="swiper-slide" key={category._id}>
+              
+              <div className="swiper-slide" key={category.id}>
                 {/* <p>{category.name}</p> */}
-                <img src={category.image.secure_url} alt={category.name} />
+                <img src={category.thumbnail} alt={category.title} />
                 
               </div>
             ))}
