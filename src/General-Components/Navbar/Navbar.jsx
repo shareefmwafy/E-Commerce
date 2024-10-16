@@ -16,7 +16,7 @@ function Navbar() {
         <div className="rowNav">
 
           <div className='rowOne'>
-            <span className="logo">AL-Sahreef Store</span>
+            <span className="logo">AL-Shareef Store</span>
             <button className="burgerIcon" onClick={handleDropdown}>
                 <span></span>
                 <span></span>

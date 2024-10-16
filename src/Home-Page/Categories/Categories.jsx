@@ -2,9 +2,10 @@ import React, { useEffect, useState } from 'react';
 import './Categories.css';
 import Swiper from 'swiper/bundle';
 import 'swiper/css/bundle';
+import { Link } from 'react-router-dom';
 
 async function getCategories() {
-  const response = await fetch(`https://dummyjson.com/products`);
+  const response = await fetch('https://dummyjson.com/products?limit=10&skip=10');
   const data = await response.json();
   return data.products; // Assuming the API returns an array of category objects
 }
@@ -82,17 +83,17 @@ function Categories() {
   return (
     <>
       <div className="container">
-       
+        
       <p className='cat'>Categories</p>
         <div className="swiper">          
           <div className="swiper-wrapper">
             {categories.map((category) => (
               
-              <div className="swiper-slide" key={category.id}>
-                {/* <p>{category.name}</p> */}
-                <img src={category.thumbnail} alt={category.title} />
-                
-              </div>
+              <Link to={`/category/${category.id}`} key={category.id}>
+                <div className="swiper-slide">
+                  <img src={category.thumbnail} alt={category.title} />
+                </div>
+              </Link>
             ))}
           </div>
           <div className="swiper-button-prev"></div> 
