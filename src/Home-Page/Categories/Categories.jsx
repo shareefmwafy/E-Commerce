@@ -5,7 +5,7 @@ import 'swiper/css/bundle';
 import { Link } from 'react-router-dom';
 
 async function getCategories() {
-  const response = await fetch('https://dummyjson.com/products?limit=200&skip=90');
+  const response = await fetch('https://dummyjson.com/products?limit=50&skip=40');
   const data = await response.json();
   // console.log(data.products);
   return data.products; // Assuming the API returns an array of category objects
@@ -92,8 +92,9 @@ function Categories() {
           <div className="swiper-wrapper">
             {categories.map((category) => (
               <Link to={`/category/${category.id}`} key={category.id} className="swiper-slide">
-                <div >
+                <div className='category'>
                   <img src={category.thumbnail} alt={category.title} />
+                  <p className='category-title'>{category.title}</p>
                 </div>
               </Link>
             ))}
