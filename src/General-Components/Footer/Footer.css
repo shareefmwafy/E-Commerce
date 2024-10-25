@@ -1,0 +1,37 @@
+footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: red;
+}
+.general{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.About{
+    width: 25%;
+    background-color: green;
+    
+}
+.Categorise{
+    width: 25%;
+    background-color: blue;
+}
+
+.info{
+    width: 25%;
+    background-color: aqua;
+}
+
+.contact{
+    width: 25%;
+    background-color: blueviolet;
+
+}
+
+
+.title{
+    align-self: center;
+}
