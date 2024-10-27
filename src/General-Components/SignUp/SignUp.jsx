@@ -14,8 +14,8 @@ function SingUp() {
     const handleChange = (e) => {
         const{name,value} = e.target;
         setUser({
-         ...user,
-            [name]:value
+        ...user,
+        [name]:value
         })
 
     };
@@ -35,11 +35,12 @@ function SingUp() {
             password: '',
             image: '',
         });
+        console.log(user);
     }; 
     const handleImageChange = (e)=>{
         const {name,files} = e.target;
         setUser({
-         ...user,
+        ...user,
         [name]:files[0]
         });
 

@@ -5,7 +5,7 @@ import 'swiper/css/bundle';
 import { Link } from 'react-router-dom';
 
 async function getCategories() {
-  const response = await fetch('https://dummyjson.com/products?limit=50&skip=40');
+  const response = await fetch('https://dummyjson.com/products?limit=50&skip=77');
   const data = await response.json();
   // console.log(data.products);
   return data.products; // Assuming the API returns an array of category objects
@@ -71,10 +71,10 @@ function Categories() {
 
       },
       // effect: 'coverflow',
-      // coverflowEffect: {
-      //   rotate: 0,
-      //   slideShadows: true,
-      // },
+      coverflowEffect: {
+        rotate: 0,
+        slideShadows: true,
+      },
     });
 
     return () => {
