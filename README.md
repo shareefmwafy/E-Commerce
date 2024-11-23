@@ -10,25 +10,12 @@ This is a simple e-commerce website that retrieves product data from an API and 
 
 ## Technologies Used
 
-- **Frontend:** [Specify your frontend framework/library, e.g., React, Vue, etc.]
-- **Backend:** [Specify your backend framework, e.g., Node.js, Flask, etc.]
-- **Database:** [Specify the database, e.g., MongoDB, MySQL, etc.]
-- **API:** [Details about the API used, if available.]
+- **Frontend:** [React + vite]
+- **API:** [Use Dummy API.]
 
 ## Installation
 
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone [<repository-url>](https://github.com/shareefmwafy/E-Commerce)
    cd <project-directory>
-
-
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
