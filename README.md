@@ -17,5 +17,7 @@ This is a simple e-commerce website that retrieves product data from an API and 
 
 1. Clone the repository:
    ```bash
-   git clone [<repository-url>](https://github.com/shareefmwafy/E-Commerce)
+   git clone https://github.com/shareefmwafy/E-Commerce
    cd <project-directory>
+   npm install
+   npm run dev
