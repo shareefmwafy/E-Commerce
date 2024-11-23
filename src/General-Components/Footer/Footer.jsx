@@ -1,5 +1,8 @@
 import React from 'react'
 import './Footer.css'
+
+import visaImage from './images/visa.png'
+import payPalImage from './images/paypal.png'
 function Footer(){
     return(
         <footer>
@@ -7,8 +10,8 @@ function Footer(){
                 <p className='title'>About</p>
                 <p className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, tempore.</p>
                 <div className='payment'>
-                    <img src="./images/visa.png"/>
-                    <img src="./images/paypal.png"/>
+                    <img src={visaImage}/>
+                    <img src={payPalImage}/>
                 </div>
                 <p>Secure Online Payment</p>
             </div>
@@ -23,7 +26,7 @@ function Footer(){
             </div>
             <div className='contact general'>
                 <p className='title'>Contact</p>
-                <div>Content</div>
+                <div>sh.mwafy1@gmail.com</div>
             </div>
         </footer>
     );
